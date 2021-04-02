@@ -13,13 +13,13 @@ namespace UnifiedEconomyFramework
         /// </summary>
         /// <param name="num">金额</param>
         /// <returns></returns>
-        public bool MoneyUp(long num);
+        public bool MoneyUp(string name, long num);
         /// <summary>
         /// 减少玩家余额, 返回是否成功调用.
         /// </summary>
         /// <param name="num">金额</param>
         /// <returns></returns>
-        public bool MoneyDown(long num);
+        public bool MoneyDown(string name, long num);
         /// <summary>
         /// 显示玩家余额
         /// </summary>

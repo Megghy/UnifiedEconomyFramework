@@ -61,14 +61,14 @@ namespace UnifiedEconomyFramework
         /// <returns></returns>
         public static bool MoneyUp(string name, long num)
         {
-            if (Config.InterfaceFirst) FrameList.ForEach(f => f.MoneyUp(num));
+            if (Config.InterfaceFirst) FrameList.ForEach(f => f.MoneyUp(name, num));
             else
             {
                 if (!CheckLoaded())
                 {
                     if (FrameList.Any())
                     {
-                        FrameList.ForEach(f => f.MoneyUp(num));
+                        FrameList.ForEach(f => f.MoneyUp(name, num));
                         return true;
                     }
                     else
@@ -94,14 +94,14 @@ namespace UnifiedEconomyFramework
         /// <returns></returns>
         public static bool MoneyDown(string name, long num)
         {
-            if (Config.InterfaceFirst) FrameList.ForEach(f => f.MoneyDown(num));
+            if (Config.InterfaceFirst) FrameList.ForEach(f => f.MoneyDown(name, num));
             else
             {
                 if (!CheckLoaded())
                 {
                     if (FrameList.Any())
                     {
-                        FrameList.ForEach(f => f.MoneyDown(num));
+                        FrameList.ForEach(f => f.MoneyDown(name, num));
                         return true;
                     }
                     else
