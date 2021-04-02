@@ -17,7 +17,7 @@ namespace UnifiedEconomyFramework
         {
         }
         public override string Name => "UnifiedEconomyFramework";
-        public override Version Version => new Version(1, 0);
+        public override Version Version => new Version(1, 1);
         public override string Author => "Megghy";
         public override string Description => "为不同的经济插件提供统一接口.";
         public override void Initialize()
